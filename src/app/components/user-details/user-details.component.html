@@ -1,0 +1,12 @@
+
+
+<div class="user-container">
+    
+    <div  *ngIf="!(loader$|async)" class="user-card">
+        <div class="img-container">
+            <img [src]='user?.avatar'>
+        </div>
+        <div class="name">{{user?.first_name}} {{user?.last_name}}</div>
+        <div class="email">{{user?.email}}</div>
+    </div>
+</div>

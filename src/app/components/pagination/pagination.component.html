@@ -1,0 +1,10 @@
+<div class="paginator-container">
+
+        <button [ngClass]="{'inActive':currentPage==1}"  [disabled]="currentPage==1" (click)="onPageIndexChange(currentPage-1)">previous</button>
+        <button class="page-num" *ngFor="let page of pagesNums" (click)="onPageIndexChange(page)" [ngClass]="{'active':currentPage==page}">
+            {{page}}
+        </button>
+    
+        <button [ngClass]="{'inActive':currentPage==pagesNums.length}"  [disabled]="currentPage==pagesNums.length" (click)="onPageIndexChange(currentPage+1)">next</button> 
+</div>
+

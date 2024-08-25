@@ -1,0 +1,11 @@
+<div class="header-container">
+    <div class="row">
+
+        <div class="item content-container ">
+            <app-search-box *ngIf="!(hideHeaderElFlag |async)" ></app-search-box> 
+            <button *ngIf="hideHeaderElFlag|async" class="btn main-btn" (click)="back()" >back</button>
+        </div>
+
+        <div #toggleBtn class="toggle-btn item" (click)="toggleMode()"></div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="user">
+    <div class="img-container">
+    <img [src]="userdata.avatar">
+        <div class="user-id">{{userdata.id}}</div>
+
+    </div>
+    <div class="user-content">
+        <p class="name">
+            {{userdata.first_name}}
+            {{userdata.last_name}}
+        </p>
+        <p class="email">{{userdata.email}}</p>
+    </div>
+    <button class="btn">View details</button>
+</div>
