@@ -1,13 +1,16 @@
-
-
 .paginator-container {
     display: flex;
     justify-content: space-evenly;
-    margin: 30px auto;
     width: 25%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
     & button {
         display: inline-block;
-        background-color: rgb(175, 157, 253);
+        // background-color: rgb(175, 157, 253);
+        background-color: rgba(78, 73, 158, 0.5);
         color: #ffffff;
         padding: 10px 15px;
         border: none;
@@ -34,21 +37,23 @@
 
 }
 
-.page-num{
+.page-num {
     display: block;
 }
-@media only screen and (max-width: 992px){
-    .paginator-container{
-       width: 35%;
+
+@media only screen and (max-width: 992px) {
+    .paginator-container {
+        width: 35%;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .paginator-container{
-       width: 50%;
+    .paginator-container {
+        width: 50%;
 
     }
 
-    .page-num{
+    .page-num {
         // display: none !important;
     }
 }
