@@ -1,7 +1,6 @@
 
 
     <div *ngIf="!(loader$|async)" class="list-container">
-        <!-- <div class=""> -->
         <div class="users-container" *ngIf="(users|filter:serchText).length>0 ;else noUser">
             <div class="user-container" *ngFor="let user of users|filter:serchText">
                 <a routerLink="{{user.id}}">
@@ -15,7 +14,6 @@
             <p class="no-users">no user found</p>
         </ng-template>
 
-        <!-- </div> -->
         <div class="paginator" >
             <app-pagination (pageNum)="changePageIndex($event)" [totalPages]="totalPges"
                 [currentPage]="currentPage    "></app-pagination>
