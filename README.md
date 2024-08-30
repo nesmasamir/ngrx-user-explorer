@@ -29,6 +29,6 @@ External API: Fetches user data to be displayed in the application.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/user-explorer-ngrx.git
+   git clone https://github.com/nesmasamir/user-explorer-ngrx.git
    cd user-explorer-ngrx
 
